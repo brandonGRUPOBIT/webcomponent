@@ -1,0 +1,950 @@
+@media screen and (min-width: 1900px) {
+
+    p{
+        font-size: 18pt;
+    }
+    .nav-menu ,
+    .nav-submenu{
+        display: flex!important;
+    }
+
+}
+
+
+@media (min-width: 1101px) and (max-width: 1200px) {
+
+    .main-menu .menu a {
+        padding: 1em 0.3em;
+        font-size: 11pt;
+    }
+    .header-top .form-item input {
+        width: 10em;
+    }
+    .top-menu .menu a {
+        padding: 0em 0.3em;
+    }
+    .language-switcher-locale-url li {
+        margin: 0 0.1em;
+    }
+}
+/* Tablets en horizonal y escritorios normales*/
+@media (min-width: 921px) and (max-width: 1100px) { 
+
+    .universidadglobal .odd h3 {
+        padding-top: 1em;
+        margin-left: 0;
+        font-size: 16pt;
+    }
+    .carrusel-contenido h1 {
+        font-size: 30pt;
+    }
+    .eventos #rsseventos {
+        margin: 0;
+    }
+    #transparenciainstitucional li ,
+    #gobernanza li{
+        font-size: 14pt;
+        padding: 0;
+    }
+    #transparenciainstitucional ul,
+    #gobernanza ul{
+        margin-top: 0;
+    }
+    #transparenciainstitucional h2,
+    #gobernanza h2{
+        font-size: 18pt;
+    }
+    .sermasedu .title-bg {
+
+        top: -1em;
+    }
+
+    .lidereseducando .contenido-bg .field-item {
+        width: 50%;
+        margin: 2em 0;
+    }
+    .top-menu .menu a {
+        padding: 0 0.2em;
+        font-size: 8pt;
+    }
+    .quote1 {
+        width: 30%;
+    }
+ 
+    section#enlaceinteres,
+    section#enlaceinteres2,
+    section#historia{
+        background-size: auto 100%!important;
+    }
+    section#universidadesaliadas, section#redesmovilidad {
+        background-size: 100% 25%!important;
+    }
+    .page-imagen .boton {
+        top: 40%;
+        left: 7%;
+    }
+    #header {
+        width: 15%;
+    }
+    section#worldtravel{
+        background-size: auto 100%!important;
+    }
+
+    .region-search-top{
+        display: none;
+    }
+    .carrusel .carrusel-contenido {
+        width: 90%;
+    }
+    .nav-menu ,
+    .nav-submenu{
+        display: flex!important;
+    }
+    .main-menu .menu a {
+        padding: 1em 0.2em;
+        font-size: 10pt;  
+    }
+    .submenu .nav-submenu a {
+        display: block;
+        padding: 1em 0.3em;
+        font-size: 10pt;
+    }
+    .noticias .wrapper-noticias {
+        justify-content: space-between;
+    }
+    .noticias .wrapper-noticias>div{
+        margin: 0.3em;
+        width: 26%;
+    }
+    .primary-news {
+        width: 0;
+    }
+    .block-contenido h2{
+        padding-bottom: 0.3em;
+        font-size: 24pt;
+    }
+    .block-contenido p{
+        font-size: 14pt;
+    }
+    .block-contenido .boton .field-item {
+        margin-top: 0.3em;
+    }
+    #bienvenidarector .block-contenido span {
+        font-size: 20pt!important;
+    }
+    .mision .flexb > .field-items {
+        align-items: flex-start;
+    }
+}
+
+/* Móviles en horizontal o tablets en vertical */
+@media  screen and (max-width: 920px)  {
+
+/*menu expandido*/
+.nav-menu .expanded .menu {
+    position: initial;
+        background-color: transparent;
+}
+.nav-menu .expanded .menu li {
+    display: block!important;
+}
+.nav-menu .expanded .menu a {
+    color: white!important;
+    border-bottom: none;
+    margin-left: 2em;
+    width: 85%;
+}
+/*fin menu expandido*/
+h1.page-title{
+    text-align: center;
+}
+#investigacion-bloque .flexb > .field-items > .field-item {
+width: 48%!important;
+margin-bottom: 1em;
+}
+#llamanoshome .tellamamamos h2 {
+font-size: 16pt;
+}
+#llamanos {
+display: initial!important;
+}
+
+#block-bean-llamanoshome  {
+position: initial!important;
+text-align: center;
+display: initial!important;
+}
+
+#block-bean-llamanoshome  img {
+display:  initial!important;
+cursor: pointer;
+}
+#llamanoshome .tellamamamos{
+width: 100%!important;
+}
+#llamanos a{
+color:white;
+}
+
+.landingabsolute{
+position: initial;
+}
+.landingcabecera{
+display: block;
+}
+.landingderecha{
+width: 100%;
+}
+
+.landingderecha h2{
+padding-top: 0em;
+color:#003f72;
+}
+.landingizquierda{
+width: 100%;
+}
+
+.modal-video > div {
+width: 80%;
+}
+.sermasedu .title-bg {
+background-color: #eaab00;
+position: initial;
+}
+.oferta .imagen-mouseover {
+opacity: 1;
+}
+section#investigaciones{
+background-image: none!important;
+background-color: #f3f3f3!important;
+}
+#investigaciones .title-bg {
+width: 100%;
+}
+#investigaciones .bean-contenido-con-bloque-de-imagenes .field-collection-container {
+width: 100%;
+}
+.top-menu .menu a {
+font-size: 9pt;
+}
+.noticias  .wrapper-noticias>div{
+width: 22%;
+} 
+.culturayperspectivas .bean-contenido-con-background > .content,
+#investigaciones .bean-contenido-con-bloque-de-imagenes > .content{
+display: block;
+}
+.culturayperspectivas .bean-contenido-con-background > .content > div {
+width: 100%;
+}
+.saludybienestar {
+background-size: auto 100%!important;
+}
+section#universidadesaliadas, section#redesmovilidad {
+background-image: none!important;
+}
+.cooperacion .contenido-bg .field-items {
+justify-content: center;
+}
+.sermas .contenido-bg .odd {
+width: 95%;
+margin: auto;
+}
+section#universidadglobal {
+background-image: none!important;
+}
+.universidadglobal .odd h3 {
+color: #003f72;
+}
+.universidadglobal .odd p {
+margin-left: 0;
+color: #737373!important;
+}
+.header-internas {
+position: relative!important;
+}
+.contenido-accordeon > .field-items > .field-item {
+width: 100%;
+}
+.blocks{
+background-size: auto 100%!important;
+}
+.nav-menu ,
+.nav-submenu{
+display: none;
+}
+.carrusel .carrusel-contenido {
+width: 80%;
+}
+.carrusel-contenido h1 {
+font-size: 30pt;
+}
+header{
+position: absolute;
+left: 40%;
+top: 1em;
+}
+.top-menu-right{
+display: none;
+}
+#logo img {
+width: 100px;
+}
+/*temporales*/
+#toolbar{
+display: none;
+}
+.header-wrapper{
+padding: 0;
+background: #003f72;
+}
+.main-menu  .title-menu{
+display: flex;
+justify-content: flex-start;
+}
+.main-menu .menu a:hover, .main-menu .menu a.active, .main-menu .menu a.active-trail {
+background-color: #4a4848;
+}
+.title-menu{
+display: flex;
+justify-content: flex-end;
+}
+.title-menu .mainmenu-toggle{
+display: inline-flex;
+padding: 1em;
+color:white;
+background-color: #eaab00;
+}
+.title-menu .submenu-toggle{
+display: inline-flex;
+padding: 1em;
+color:white;
+background-color: #eaab00;
+}
+.title-menu a:hover{
+color:white;
+}
+.wrapper {
+background: rgba(0, 63, 114, 0.7);
+z-index: 999;
+}
+.submenu {
+border-bottom: none;
+}
+.main-menu,.sub-menu {
+width: 100%;
+}
+.main-menu .menu,
+.sub-menu .menu {
+display: initial;
+}
+.submenu .logo{
+display: none;
+}
+.submenu-navigation{
+width: 100%;
+}
+.sub-menu .field-items {
+display: block;
+}
+.gototop{
+display: none;
+} 
+.bean-contenido-con-bloque-de-imagenes .flexb > .field-items > .field-item{
+width: 50%;
+}
+.region-carousel{
+padding-top: 2em;
+}
+.enlaces-icon  .imagen-mouseover {
+opacity: 0;
+} 
+.imagen-contenido p {
+display: inherit!important;
+}
+.bean-contenido-con-bloque-de-imagenes img{
+display: block;
+}
+.bean-contenido-con-imagen-izquierda .content, 
+.bean-contenido-con-imagen-derecha .content ,
+.bean-contenido-con-video-derecho .content,
+.bean-contenido-con-video-izquierdo .content
+{
+display: block;
+}
+.bean-contenido-con-imagen-izquierda .content > div, 
+.bean-contenido-con-imagen-derecha .content > div,
+.bean-contenido-con-video-derecho .content > div,
+.bean-contenido-con-video-izquierdo .content > div{
+width: 100%;
+}
+
+.recreacionycultura .flexb > .field-items > .field-item ,
+.saludybienestar .flexb > .field-items > .field-item,
+.acompanamiento .flexb > .field-items > .field-item,
+.accionsocial .flexb > .field-items > .field-item{
+width: 100%;
+}
+#footer{
+display: none;
+}
+.quote1 {
+width: 50%;
+}
+.rector .content{
+display: flex;
+}
+#bienvenidarector .block-contenido span {
+font-size: 20pt!important;
+}
+#bienvenidarector .block-contenido {
+width: 50%;
+}
+#bienvenidarector .block-imagen {
+width: 50%;
+}
+.mision .flexb > .field-items > .field-item {
+width: 100%;
+}
+section#misionvision{
+background-image: none!important;
+}
+section#misionvision .even p {
+color: #737373!important;
+}
+.block-contenido{
+padding: 1em 0;
+}
+.enlaces-icon img{
+display: initial!important;
+}
+.quote1 p {
+text-align: center;
+}
+.cooperacion .contenido-bg .odd {
+top: 0%;
+}
+.page-contenido,
+.page-imagen{
+width:100%;
+}
+
+/*fondos*/
+section#utplnumeros,
+section#campus,
+section#enlacesdeinteres,
+section#misionvision,
+section#acompanamiento,
+section#nuestrocampus,
+section#accionsocial,
+section#historia,
+section#worldtravel{
+background-position: center!important;
+background-size: auto 100%!important;
+}
+section#escueladenegocios {
+background-image: none!important;
+}
+.lineasestrategicas .imagen-mouseover{
+opacity: 1;
+}
+.sermas .contenido-bg .even {
+width: 20%;
+display: none;
+}
+section#lidereseducando {
+background-image: none!important;
+}
+.lidereseducando .contenido-bg .field-item {
+margin: 0;
+}
+.lidereseducando .bean-contenido-con-background > .content {
+display: block;
+}
+.lidereseducando .title-bg {
+width: 100%;
+}
+.lidereseducando .contenido-bg {
+width: 100%;
+}
+section#universidadglobal {
+background-position-y: 100%!important;
+
+}
+.universidadglobal .even h2 {
+width: 100%;
+}
+.universidadglobal .odd h3 {
+padding-top: 0;
+
+}
+section#testimonialdecide {
+background-size: auto 100%!important;
+padding: 0;
+margin-bottom: 4em;
+}
+.generamosconocimiento .bean-contenido-con-bloque-de-imagenes > .content {
+display: block;
+}
+.generamosconocimiento .bean-contenido-con-bloque-de-imagenes > .content > div {
+width: 100%;
+}
+.generamosconocimiento .imagen-mouseover {
+opacity: 1;
+}
+.carrusel-absolute {
+position: initial;
+}
+.group-carrusel {
+display: initial;
+}
+.carrusel-bloque {
+margin: auto;
+}
+.carrusel-bloque .content-b{
+width: 100%!important;
+}
+.carrusel-bloque .content-b p {
+font-size: 13pt;
+width: 90%;
+margin: auto;
+}
+.carrusel-formulario {
+width: 90%;
+margin: auto;
+background-color: #4a4848;
+}
+
+/*misionidente*/
+.page-node-109 .carrusel-bloque h2{
+font-size: 13pt!important;
+color: #003f72!important;
+}
+#agenda .flexb > .field-items {
+width: 100%!important;
+}
+.formulario-misionidente section {
+max-width: 300px!important;
+}
+.page-node-109 .misiones-flotante .boton .field-item {
+bottom: 100px!important;
+}
+}
+
+/*Móviles en vertical */
+@media screen and (min-width: 760px) {
+.desplegable-opciones{
+display: block!important;
+}
+}
+
+
+/*Móviles en vertical */
+@media screen and (max-width: 700px) {
+
+.imagen-contenido h4{
+    bottom: 0!important;
+}
+
+
+/*nuevos efectos oferta y becas
+ymtorres 16/12/2020*/
+
+.desplegable-opciones{
+display: none;
+}
+.wrapper-desplegables{
+display: block;
+}
+.wrapper-desplegables .section1 {
+width: 90%;
+background-color: #fafafa;
+position: absolute;
+z-index: 99;
+border: 3px solid #003f72;
+}
+.wrapper-desplegables .section2 {
+width: 100%;
+min-height: auto;
+}
+.wrapper-desplegables .section1 div.selected {
+background-color: #003f72;
+color: white;
+}
+.wrapper-desplegables .section1 > div > div.general{
+width: 100%;
+border-bottom: 1px solid #003f72;
+background-image: none!important;
+padding: 1em!important;
+border-radius: initial!important;
+margin: 0!important;
+}
+.wrapper-desplegables .section1 > div > div.distancia,
+.wrapper-desplegables .section1 > div > div.presencial,
+.wrapper-desplegables .section1 > div > div.linea
+{
+width: 100%;
+border-bottom: 1px solid #003f72;
+padding: 1em!important;
+border-radius: initial!important;
+margin: 0!important;
+background-position-x: 95%!important;
+}
+.desplegable-opciones h2{
+display: none;
+}
+.wrapper-desplegables .section2 > div {
+justify-content: space-between!important;
+}
+.wrapper-desplegables .section2 > div > div {
+width: 100%;
+margin: 0.5em 0!important;
+}
+
+.desplegable-contenido a {
+padding: 1em 0;
+}
+.desplegable-opciones .section{
+display: flex;
+justify-content: space-around;
+flex-flow: wrap;
+}
+.desplegable-opciones h2 {
+font-size: 8pt;
+text-transform: uppercase;
+}
+.movil-seleccione{
+display: block!important;
+width: 100%;
+cursor: pointer;
+font-size: 10pt;
+color: #003f72;
+background: white;
+border: 3px solid #003f72;
+padding: 1em 0;
+text-align: center;
+text-transform: uppercase;
+font-weight: 700;
+background-image: url(https://www.utpl.edu.ec/sites/default/files/arrow-down.png);
+background-repeat: no-repeat;
+background-position: 80%;
+background-size: initial;
+}
+.enlaces-admision {
+    margin-left: 0!important;
+    width: auto!important;
+}
+.presentacion-oferta-admision {
+    flex-flow: column-reverse;
+}
+/**/
+
+/*efectos en páginas distancia, presencial*/
+.newfechas .title-bg{
+position: initial!important;
+}
+.newfechas {
+padding-top: 1em;
+}
+.newproceso .flexb > .field-items > .field-item {
+margin-bottom: 1em;
+max-width: 46%;
+}
+.wrapper-modal > div > div {
+width: 45%;
+}
+.newformulario .contenido-bg{
+max-width: 300px;
+}
+/*fin efectos en páginas distancia, presencial*/
+
+    .exit-modal {
+        width: 20%;
+    }
+ 
+    
+    .quote-vida-universitaria{
+        display: none;
+    }
+    .padding3 .blocks,
+    .padding4 .blocks,
+    .padding5 .blocks{
+        padding: 2em 0;
+    }
+    .iniciativaslocales .contenido-bg .field-item {
+        margin: 1em 0;
+    }
+    .iniciativaslocales .contenido-bg img {
+        display: none;
+    }
+    .iniciativaslocales .contenido-bg p{
+        font-size: 20pt;
+    }
+    .top-menu .menu a {
+        padding: 0em 0.2em;
+    }
+    #block-menu-menu-header-top{
+        display: none;
+    }
+    .language-switcher-locale-url a{
+        padding: 0 0.5em;
+    }
+    .top-menu{
+        width: 100%;
+    }
+    .top-menu .menu a {
+        border-left: none;
+    }
+  
+    /*servicios*/
+    .noticias .wrapper-noticias>div {
+        width: 100%;
+    }
+    .eventos .field--name-start-date {
+        font-size: 14pt;
+    }
+    .page-imagen{
+        width: 100%;
+        position: relative;
+    }
+    .page-imagen .boton{
+        position: initial!important;
+    }
+    .page-contenido{
+        width: 100%;
+    }
+    /*bloques*/
+    .intercambios .flexb > .field-items > .field-item {
+        width: 100%!important;
+    }
+    /*bloques personalizados dispuestos en diferentes tamaños*/
+    .oferta .flexb > .field-items > .field-item,
+    .enlaces-icon .flexb > .field-items > .field-item,
+    .estadisticas .flexb > .field-items > .field-item {
+        width: 50%!important;
+    }
+    .flexb > .field-items > .field-item{
+        width: 100%!important;
+    }
+
+    .bean-contenido-con-bloque-de-imagenes .flexb > .field-items > .field-item {
+        width: 100%;
+    }
+    .rector .content{
+        display: block;
+    }
+    #bienvenidarector .block-contenido {
+        width: 100%;
+    }
+    #bienvenidarector .block-imagen {
+        width: 100%;
+    }
+
+    /*principal*/ 
+    .carrusel{
+        padding-top: 10px;
+    }
+    .carrusel-contenido h1,
+    .carrusel-contenido h2,
+    .field-name-field-enlace-carrusel {
+        display: none;
+    }
+    .region-footer,
+    .contactanos ,
+    .pluggins .contact,
+    .wrapper-noticias{
+        display:block;
+    }
+
+    .banner .content {
+        display: block;
+        text-align: center;
+    }
+    .campus .contenido-bg .field-items{
+        width: 100%;
+    }
+    .campus .content{
+        padding: 1em 0;
+    }
+    .campus .contenido-bg p {
+        font-size: 16pt;
+    }
+    .estadisticas .contenido-bg h1 {
+        font-size: 20pt;
+    }
+    .testimonios .node-testimonios > div {
+        display: block;
+        width: 90%!important;
+        margin: auto;
+
+    }
+
+    .testimonios .flex-direction-nav {
+        position: initial;
+    }
+
+    .field-name-field-imagen-testimonio{
+        text-align: center;
+    }
+    .testimonios .node-testimonios img{
+        width: 40%;
+        display: initial;
+    }
+
+    .pluggins {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .codigo {
+        width: 100%;
+    }
+
+    #contacto .blocks>h2 {
+        display: none;
+    }
+    #contacto {
+        background-image: none;
+    }
+
+    /*acerca de*/
+    .quote1 {
+        width: 100%;
+        float: none;
+        margin: 0;
+    }
+
+
+    /*ubicanos*/
+    #campusuniversitario .col {
+        width: 100%;
+    }
+    .centrosinternacionales .contenido-bg .field-item {
+        width: 100%!important;
+    }
+
+    .ubicanos .button1{
+        position: initial!important;
+        margin-bottom: 2em!important;
+    }
+    .ubicanos img{
+        float:none!important;
+        width: 100%!important;
+        height: auto!important;
+    }
+
+    .ubicanos .field-items{
+        text-align: center;
+    }
+    .ubicanos .field-item {
+        position: initial;
+    }
+    .centrosnacionales img,
+    .centrosinternacionales img{
+        display: block;
+    }
+    #centrosnacionales .contenido-bg .field-item {
+        width: 100%;
+    }
+
+    /*vidauniversitaria*/
+    .recreacionycultura,
+    .saludybienestar{
+        background-image: none;
+        background-color: #003f72;
+    }
+    #nuestrocampus .contenido-bg .field-item {
+        width: 100%!important;
+    }
+    .recreacionycultura .view-content {
+        display: block;
+        padding: 0.3em;
+    }
+    .sliderblock .flexslider {
+        width: 100%;
+    }
+    .quote2 {
+        width: 100%;
+    }
+
+    .estasbuscando img{
+        display: block;
+    }
+    .estasbuscando p{
+        font-size: 14pt;
+    }
+    .estasbuscando .imagen-contenido h3{
+        top:1em;
+        color: #eaab00;
+        font-size: 17pt;
+        margin-left: 0em;
+    }
+    .ofertaacc .contenido-accordeon .field-item {
+        width: 100%;
+        margin: 0.3em 0;
+    }
+    .bean-contenido-con-imagen-izquierda .boton > .field-items {
+        text-align: center;
+    }
+    #testimonialinternacional img{
+        float: none!important;
+        margin-right: 0!important;
+        width: 100px;
+        margin:auto;
+    }
+    #testimonialinternacional p {
+        text-align: center;
+    }
+    #testimonialinternacional p span{
+        font-size: 16pt!important;
+    }
+    .cooperacion .contenido-bg .field-items {
+        height: auto!important;
+    }
+    .menu-menus {
+        width: 100%;
+    }
+    .enlaces-menus a:after {
+        content: "keyboard_arrow_down";
+    }
+
+    .bean-bloques-con-menus-laterales .field-collection-container {
+        width: 100%;
+    }
+    section#inscripcionesgrado, section#admisiondistancia {
+        background-image: none!important;
+
+    }
+
+    section#universidadglobal {
+        background-image: none!important;
+    }
+    .universidadglobal .odd h3 {
+        padding-top: 0;
+        font-size: 16pt;
+        margin-left: 0;
+        color:#003f72!important;
+    }
+
+    .universidadglobal .odd p {
+        color:#737373!important;
+        margin-left: 0;
+    }
+
+    .testimonialdecide blockquote p {
+        font-size: 16pt;
+    }
+    .sermas .contenido-bg .odd span{
+        font-size: 16pt!important;
+    }
+    .sermasedu .contenido-bg .odd  {
+        text-align: center;
+    }
+    .sermasedu .contenido-bg .odd img {
+        width: 20%;
+    }
+    .sermasedu .title-bg p {
+        font-size: 16pt;
+    }
+
+
+}
