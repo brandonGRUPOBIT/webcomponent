@@ -99,5 +99,7 @@ export default {
 </script>
 
 <style>
+@import "../styles/menustyles.css";
+@import "../styles/styles.css";
 @import "../styles/styles-events-wc.css";
 </style>

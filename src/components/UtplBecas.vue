@@ -1,22 +1,10 @@
 <template>
-    <div class="wrapper-oferta padding2">
+    <div class="wrapper-becas padding2">
         <div class="layout-1">
-            <div class="presentacion-oferta-admision">
-                <div>
-                    <h2 class="rtecenter"><strong>Oferta académica</strong></h2>
-                </div>
-                <div class="enlaces-admision">
-                    <a href="https://utpl.edu.ec/distancia">
-                        Admisiones grado Modalidad Abierta y a Distancia
-                    </a>
-                    <a href="https://utpl.edu.ec/presencial">
-                        Admisiones grado Modalidad Presencial
-                    </a>
-                    <a href="https://tec.utpl.edu.ec">Admisiones tecnologías</a>
-                    <a href="https://utpl.edu.ec/maestrias">
-                        Admisiones maestrías
-                    </a>
-                </div>
+            <div>
+                <h2 class="rtecenter"><strong>Tipos de</strong> becas</h2>
+                <p>A través de nuestro programa de becas ofrecemos una oportunidad a todos nuestros alumnos cuya situación económica no les permite cubrir los gastos universitarios y que se destacan por sus méritos académicos o pertenecen a grupos minoritarios.</p>
+                <p><strong>Pueden postular a nuestras becas</strong> todos los alumnos nuevos (primer ciclo) y los alumnos actuales (segundo ciclo en adelante) de grado, tecnologías y posgrado en nuestras dos modalidades de estudio.</p>
             </div>
 
             <div class="wrapper-desplegables">
@@ -29,10 +17,10 @@
                             :class="{ selected: selectedOpt === 'todo' }"
                             @click="setSelectedOpt('todo')"
                         >
-                            Toda la oferta
+                            Todas las Becas
                         </div>
                     </div>
-                    <h2>Oferta por área</h2>
+                    <h2>Tipos de Becas</h2>
                     <div class="section">
                         <div
                             class="general"
@@ -69,38 +57,31 @@
                         >
                             Modalidad Presencial
                         </div>
-                        <div
-                            class="linea"
-                            id="línea"
-                            :class="{ selected: selectedOpt === 'En línea' }"
-                            @click="setSelectedOpt('En línea')"
-                        >
-                            En línea
-                        </div>
+                        
                     </div>
                 </div>
 
                 <div class="section2 desplegable-contenido">
-                    <h2 class="desplegable-title">Grado</h2>
-                    <div class="grado">
+                    <h2 class="desplegable-title">Becas Grado</h2>
+                    <div class="becas-grado">
                         <div
                             :class="[
                                 'item',
-                                career['field_area'],
-                                career['field_modalidad_carrera'][0].replace(
+                                becaGrado['field_tipo_de_beca'],
+                                becaGrado['Aplica'][0].replace(
                                     'Modalidad',
                                     ''
                                 ),
                             ]"
-                            v-for="(career, index) of careers"
+                            v-for="(becaGrado, index) of becasGrado"
                             :key="index"
                             :style="{
                                 display:
                                     selectedOpt === 'todo' ||
                                     selectedOpt ===
-                                        career['field_area'].trim() ||
+                                        becaGrado['field_tipo_de_beca'].trim() ||
                                     selectedOpt ===
-                                        career['field_modalidad_carrera'][0]
+                                        becaGrado['Aplica'][0]
                                             .replace('Modalidad', '')
                                             .trim()
                                         ? 'flex'
@@ -109,7 +90,7 @@
                         >
                             <img
                                 v-if="
-                                    career['field_modalidad_carrera'][0] ===
+                                    becaGrado['Aplica'][0] ===
                                     ' Modalidad Abierta y a Distancia'
                                 "
                                 src="https://www.utpl.edu.ec/sites/default/files/distancia-icon.png"
@@ -119,97 +100,81 @@
                                 src="https://www.utpl.edu.ec/sites/default/files/presencial-icon.png"
                             />
                             <img
-                                v-if="career['field_modalidad_carrera'][1]"
+                                v-if="becaGrado['Aplica'][1]"
                                 src="https://www.utpl.edu.ec/sites/default/files/presencial-icon.png"
                             />
-                            <div v-html="career.title"></div>
+                            <div v-html="becaGrado.title"></div>
                         </div>
                     </div>
-                    <h2 class="desplegable-title">Tecnologías</h2>
-                    <div class="tecnologias">
-                        <div
-                            class="item Abierta y a Distancia"
-                            :style="{
-                                display:
-                                    selectedOpt === 'todo' ||
-                                    selectedOpt === 'Abierta y a Distancia'
-                                        ? 'flex'
-                                        : 'none',
-                            }"
-                        >
-                            <img
-                                src="https://www.utpl.edu.ec/sites/default/files/distancia-icon.png"
-                            />
-                            <a href="https://tec.utpl.edu.ec/comunicacion">
-                                Comunicación Estratégica y Marketing Digital</a
-                            >
-                        </div>
-                        <div
-                            class="item Abierta y a Distancia"
-                            :style="{
-                                display:
-                                    selectedOpt === 'todo' ||
-                                    selectedOpt === 'Abierta y a Distancia'
-                                        ? 'flex'
-                                        : 'none',
-                            }"
-                        >
-                            <img
-                                src="https://www.utpl.edu.ec/sites/default/files/distancia-icon.png"
-                            />
-                            <a href="https://tec.utpl.edu.ec/transformacion">
-                                Transformación Digital de Empresas</a
-                            >
-                        </div>
-                    </div>
-                    <h2 class="desplegable-title">Maestrías</h2>
-                    <div class="posgrado">
+
+                    <h2 class="desplegable-title">Becas Posgrado</h2>
+                    <div class="becas-posgrado">
                         <div
                             :class="[
                                 'item',
-                                master['field_area'],
-                                master['field_modalidad_carrera'].length > 0 &&
-                                    master[
-                                        'field_modalidad_carrera'
-                                    ][0].replace('Modalidad', ''),
+                                becaPostGrado['field_tipo_de_beca'],
+                                'Presencial Abierta y a Distancia',
                             ]"
-                            v-for="(master, index) of masters"
+                            v-for="(becaPostGrado, index) of becasPostGrado"
                             :key="index"
                             :style="{
                                 display:
                                     selectedOpt === 'todo' ||
                                     selectedOpt ===
-                                        master['field_area'].trim() ||
-                                    (master['field_modalidad_carrera'].length >
-                                        0 &&
-                                        selectedOpt ===
-                                            master['field_modalidad_carrera'][0]
-                                                .replace('Modalidad', '')
-                                                .trim())
+                                        becaPostGrado['field_tipo_de_beca'].trim() ||
+                                    selectedOpt === 'Presencial' ||
+                                    selectedOpt === 'Abierta y a Distancia'
                                         ? 'flex'
                                         : 'none',
                             }"
                         >
                             <img
-                                v-if="
-                                    master['field_modalidad_carrera'][0] ===
-                                    ' Modalidad Abierta y a Distancia'
-                                "
                                 src="https://www.utpl.edu.ec/sites/default/files/distancia-icon.png"
                             />
-
                             <img
-                                v-else
                                 src="https://www.utpl.edu.ec/sites/default/files/presencial-icon.png"
                             />
-
-                            <img
-                                v-if="master['field_modalidad_carrera'][1]"
-                                src="https://www.utpl.edu.ec/sites/default/files/presencial-icon.png"
-                            />
-                            <div v-html="master.title"></div>
+                            
+                            <div v-html="becaPostGrado.title"></div>
                         </div>
                     </div>
+
+
+                    
+                    <h2 class="desplegable-title">Tecnologías</h2>
+                    <div class="becas-tecnologias">
+                        <div
+                            :class="[
+                                'item',
+                                becaTecnologia['field_tipo_de_beca'],
+                                'Presencial',
+                            ]"
+                            v-for="(becaTecnologia, index) of becasTecnologia"
+                            :key="index"
+                            :style="{
+                                display:
+                                    selectedOpt === 'todo' ||
+                                    selectedOpt ===
+                                        becaTecnologia['field_tipo_de_beca'].trim() ||
+                                    selectedOpt === 'Presencial'
+                                        ? 'flex'
+                                        : 'none',
+                            }"
+                        >
+                        
+                            <img
+                                src="https://www.utpl.edu.ec/sites/default/files/presencial-icon.png"
+                            />
+                            
+                            <div v-html="becaTecnologia.title"></div>
+                        </div>
+                    </div>
+
+
+                    
+
+
+
                 </div>
             </div>
         </div>
@@ -218,50 +183,75 @@
 
 <script>
 import axios from "axios";
+const becasGradoUrl ="https://becas.utpl.edu.ec/servicios/becasgeneral.json";
+const becasPostGradoUrl ="https://becas.utpl.edu.ec/servicios/becasposgrado.json";
+const becasTecnologiaUrl ="https://becas.utpl.edu.ec/servicios/becastecnologia.json";
 const mastersUrl =
     "https://srv-si-001.utpl.edu.ec/apim/portalweb/maestrias/servicios/carrerasgeneral.json";
 const careersUrl =
     "https://srv-si-001.utpl.edu.ec/apim/portalweb/carreras/servicios/carrerasgeneral.json";
 
 export default {
-    name: "academic-offer",
+    name: "becas-utpl",
     data() {
         return {
+            becasGrado: [],
+            becasPostGrado: [],
+            becasTecnologia: [],
             careers: [],
             masters: [],
             areaOpts: [
                 {
-                    id: "Empresariales",
-                    title: "Facultad de Ciencias Económicas y Empresariales",
-                    selector: "Facultad de Ciencias Económicas y Empresariales",
-                },
-                {
-                    id: "Salud",
-                    title: "Facultad de Ciencias de la Salud",
-                    selector: "Facultad Ciencias de la Salud",
-                },
-                {
-                    id: "Arquitectura",
-                    title: "Facultad de Ingenierías y Arquitectura",
-                    selector: "Facultad de Ingeniería y Arquitectura",
-                },
-                {
-                    id: "Naturales",
-                    title: "Facultad de Ciencias Exactas y Naturales",
-                    selector: "Facultad de Ciencias Exactas y Naturales",
-                },
-                {
-                    id: "Humanidades",
-                    title: "Facultad de Ciencias Sociales, Educación y Humanidades",
+                    id: "Apoyo",
+                    title: "Becas de Apoyo Económico",
                     selector:
-                        "Facultad de Ciencias Sociales, Educación y Humanidades",
+                        "Apoyo Económico",
                 },
+                {
+                    id: "Excelencia",
+                    title: "Becas de Excelencia",
+                    selector:
+                        "Excelencia",
+                },
+                {
+                    id: "Inclusión",
+                    title: "Becas de Inclusión",
+                    selector: "Inclusión",
+                },
+                {
+                    id: "Estratégica",
+                    title: "Becas Estratégica",
+                    selector: "Estratégica",
+                },
+
             ],
             modalityOpts: [],
             selectedOpt: "todo",
         };
     },
     methods: {
+        
+        getBecasGrado() {
+            axios
+                .get(becasGradoUrl)
+                .then((response) => {
+                    this.becasGrado = response.data;
+                });
+        },
+        getBecasPostGrado() {
+            axios
+                .get(becasPostGradoUrl)
+                .then((response) => {
+                    this.becasPostGrado = response.data;
+                });
+        },
+        getBecasTecnologia() {
+            axios
+                .get(becasTecnologiaUrl)
+                .then((response) => {
+                    this.becasTecnologia = response.data;
+                });
+        },
         getMasters() {
             axios
                 .get(mastersUrl, {
@@ -292,6 +282,9 @@ export default {
     mounted() {
         this.getCareers();
         this.getMasters();
+        this.getBecasGrado();
+        this.getBecasTecnologia();
+        this.getBecasPostGrado();
     },
 };
 </script>

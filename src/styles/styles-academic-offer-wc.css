@@ -156,3 +156,19 @@
     }
     /*fin interacción oferta y becas*/
     
+
+    .layout-1{
+        width: 90%;
+        margin: 0 auto;
+        max-width: 1100px;
+    }
+
+    h2, h3 {
+        color: #003f72;
+        padding-bottom: 1em;
+    }
+    
+    h1 strong, h2 strong, h3 strong, h4 strong {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+    }
